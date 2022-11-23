@@ -50,7 +50,7 @@ class InputData{
 
 //the getData function extracts the data from the dataloader.js file
 function getData(){
-        var loadedData = dataLoader();
+        var loadedData = loadData();
     return loadedData;
 }
 
@@ -126,8 +126,8 @@ function updateDisplay(){
 
     }
 
-    if(indes < 500){
-        indes++;
+    if(index < 500){
+        index++;
       }  else{
         index = 0;
       }

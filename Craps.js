@@ -138,7 +138,7 @@ else{ // creates instructions to follow if the previous conditions are false.
 
 }//ends the function 
 
-function StartFun(){
+function startFun(){
 console.log("StartFun() started");
 //disable start button
 document.getElementById("startbutton").disabled = true;
@@ -155,7 +155,7 @@ timer = setInterval(updateDisplay,time_interval);
 }
 
 
-function StopFun(){
+function stopFun(){
     console.log("StopFun() started");
     //disable stop button
 document.getElementById("stopbutton").disabled = true;
