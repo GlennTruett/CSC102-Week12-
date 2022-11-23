@@ -1,0 +1,34 @@
+#blinkText {
+    color: #2dbe5d;
+    transition: 0.5s;
+}
+
+body{
+    background-image: linear-gradient(to right,white, #2eacd4);
+}
+
+#datatable{
+
+    background-image: linear-gradient(to bottom,white 60%, skyblue);
+}
+
+.phunTable{
+    background-color: white;
+}
+
+.button{
+    width: 100px;
+    height: 30px;
+    background-color: white;
+    border-radius:12px;
+    border-color: lightblue;
+
+}
+.buttonlg{
+    width: 200px;
+    height: 30px;
+    background-color: white;
+    border-radius:12px;
+    border-color: lightblue;
+
+}

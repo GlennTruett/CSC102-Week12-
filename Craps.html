@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!--
+        UAT space page for CSC102 at UAT.edu
+        by Glenn Truett 
+        JamTruet@uat.edu
+        
+        Assignment Launching your UAT Space Program HTML Document Tags.  
+        9-12-2022
+    -->
+<html>
+
+
+<head>
+    <script src="Craps.js"></script>
+    <script src='launchdatadisplay.js'></script>
+    <link rel="stylesheet" href="style.css">
+  <script serc="dataLoader.js"></script>
+    <title>Glenn Truett's UAT Sapce Page</Title>
+<script>
+    var theTime = new Date();
+    var time_interval = 5000;
+    var running = true;
+    var index = 0;
+    var timer;
+    var data = getData();
+</script>
+    </head>
+
+<body>
+    <!--the UATSpace Logo, downloaded from http://127.0.0.1:5500/intro.html -->
+<table class="phunTable">
+    <td><img src="UATspacelogo-1.jpg"></td>
+    <!--UAT Space Program next to it-->
+    <td><h1>UAT Space Program</h1></td>
+</table>
+<br>
+<br>
+<table border="2" width="70%" id ="datatable">
+    <col style="width: 35%">
+    <col style="width: 35%">
+
+<thead>
+    <th>Data Type</th>
+    <th>Reading</th>
+</thead>
+<tbody>
+    <tr id="seconds"> </tr>
+    <tr id="latitude"></tr>
+    <tr id="longitude"></tr>
+    <tr id="gps_altitude"></tr>
+    <tr id="bmp_altitude"></tr>
+    <tr id="bmp_pressure"></tr>
+    <tr id="bmp_temperature"> </tr>
+    <tr id="dig_temperature"></tr>
+    <tr id="css_temperature"></tr>
+    <tr id="css_eCO2"></tr>
+    <tr id="css_TVOC"></tr>
+    <tr id="uv"></tr>
+    <tr id="accelx"></tr>
+    <tr id="accely"></tr>
+    <tr id="accelz"></tr>
+    <tr id="magneticx"></tr>
+    <tr id="magneticy"></tr>
+    <tr id="magneticz"></tr>
+    <tr id="gyrox"></tr>
+    <tr id="gyroy"></tr>
+    <tr id="gyroz"></tr>
+</tbody>
+</table>
+    <br>
+    The current time is: <div id="clockTime">Press start to display current time</div>
+    <br>
+    <br>
+    <!--button requierments for assignment-->
+    <button
+       onclick = "StartFun();" id="startbutton" class="button">Start</button> 
+    <button
+        onclick = "StopFun();" id="stopbutton"class="button">Stop 
+    </button>
+   <br>
+   <br>
+   <!--//<script type="text/javascript">
+        var blink = document.getElementById('blinkText');
+        setInterval(function () {
+           blink.style.opacity = (blink.style.opacity == 0 ? 1 : 0);
+        }, 1500);
+    </script>-->
+<br>
+<br>
+<!--Place to play craps-->
+<h1>Craps Game</h1> <!--prints a Header of Craps Game-->
+<div id="die1Res">The die 1 result will go here</div><br> <!--prints the die 1 result will go here and gives the result of die one the name die1Res and makes it so that the next line of text is printed with a line between the two.-->
+<div id="die2Res">The die 2 result will go here</div><br> <!--prints the die 2 result will go here and gives the result of die two the name die2Res and makes it so that the next line of text is printed with a line between the two.-->
+<div id="gameRes">The game results will go here</div><br> <!--prints The game res ults will go here and names the value of the game results gameRes and makes it so that the next line of text is printed with a line between the two. -->
+<button onclick="playCraps();"class="button">PlayCraps</button> <!--creats a button named PlayCraps and gives it the ability to call the function playCraps() -->
+<br>
+<br>
+<h1> Play a sound </h1><!--creates the header Play a sound-->
+<button class="buttonlg" onclick="playStation();">Play Space Station Sounds</button><!--creates a button named "Play Space Station Sounds" that when clicked runs the function playStation-->
+<br>
+<button class="buttonlg" onclick = "playBowie();">Play David Bowie</button>
+</body>
+
+</html>
+</DOCTYPE>
